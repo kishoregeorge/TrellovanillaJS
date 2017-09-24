@@ -66,6 +66,7 @@ controllers.save_new_task = (event, button) => {
     console.log(name);
     var taskmodel = model.createnewtask(cardId, name);
     var content = templates.addTask(taskmodel)
+    document.getElementById(`${cardId}-count`).innerText = `${model.getTaskCount(cardId)} tasks`;
     var cardcontent = `${cardId}-tasks-content`;
     var composerid = `${cardId}-card-composer`
     templates.hide_new_task(composerid);

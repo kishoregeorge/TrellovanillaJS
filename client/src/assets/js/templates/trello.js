@@ -49,8 +49,9 @@ templates.addCard = (data = {
                             <div class="list-header-target js-editing-target"></div>
                             <h2 class="list-header-name-assist js-list-name-assist" dir="auto">${data.text}</h2>
                             <textarea id= ${data.title}-list-header-name onfocusout="return controllers.update_card_header(event,this)" class="list-header-name mod-list-name js-list-name-input" aria-label=${data.text} spellcheck="false" dir="auto" maxlength="512" style="overflow: hidden; word-wrap: break-word; height: 24.8px;">${data.text}</textarea>
-                            <p class="list-header-num-cards hide js-num-cards">${data.order.length} tasks</p>
+                           
                         </div>
+                        <p id=${data.title}-count class="list-header-num-cards js-num-cards" style="float: right;margin-right: 1rem;color:#04517c">${data.order.length} tasks</p>
                     </div> 
                     <div id="${data.title}-tasks-content" class="drop-content list-cards u-fancy-scrollbar u-clearfix js-list-cards js-sortable ui-sortable" style="min-height:10px">`
     return content;

@@ -155,12 +155,15 @@ class Draggie {
         if (cardid != tocardid) {
             var newtask = model.moveTask(cardid, taskid, tocardid)
             if (newtask) {
+                
                 var tempnode = document.createElement('div');
                 tempnode.innerHTML = this.element.outerHTML.replace(new RegExp(taskid, 'g'), newtask.title);
                 var dropnode = droploc.getElementsByClassName("drop-content")[0];
                 tempnode.childNodes.forEach((cnode) => {
                     dropnode.insertBefore(cnode, appendbefore);
                 });
+                document.getElementById(`${cardid}-count`).innerText = `${model.getTaskCount(cardid)} tasks`;
+                document.getElementById(`${tocardid}-count`).innerText = `${model.getTaskCount(tocardid)} tasks`;
                 this.element.remove();
                 draggie.destroy();
                 draggie.initialize();

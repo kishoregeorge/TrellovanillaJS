@@ -68,5 +68,14 @@ model.updateTask = (cardid, taskid, value) => {
     localStorage.setItem('Dashboard', JSON.stringify(dashboard));
 }
 
+model.getTaskCount= (cardid)=>{
+    var retrievedObject = localStorage.getItem('Dashboard');
+    var dashboard = JSON.parse(retrievedObject);
+    var card = dashboard.cards[cardid];
+
+    return Object.keys(card.tasks).length;
+
+}
+
 
 export default model
