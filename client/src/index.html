@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+    <title>Trello</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/trello.css">
+
+    <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.js"></script>
+    <script src="/assets/main.bundle.js"></script>
+
+
+</head>
+
+<body class="chrome chrome-60 windows body-webkit-scrollbars body-board-view" style="background-color: rgb(75, 191, 107);">
+    <div id="surface">
+        <div id="content" tabindex="-1">
+            <div class="board-wrapper is-show-menu">
+                <div class="board-main-content">
+                    <div class="board-header u-clearfix js-board-header"><a class="board-header-btn board-header-btn-name js-rename-board" href="#"><span class="board-header-btn-text" dir="auto">Welcome Board</span></a></div>
+                    <div class="board-warnings u-clearfix js-board-warnings hide"></div>
+                    <div class="board-canvas">
+                        <div id="board" class="u-fancy-scrollbar js-no-higher-edits drop-content card-droppable">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+        </div>
+    </div>
+    <div class="window-overlay">
+        <div class="window" style="display: none;">
+            <a class="focus-dummy" href="#"></a>
+            <div class="window-wrapper js-tab-parent"></div>
+        </div>
+    </div>
+    <div class="pop-over" style="left: 249px; top: 44px;"></div>
+    <div class="tooltip-container"> </div>
+    <div id="clipboard-container" style="display: none;"></div>
+</body>
+
+</html>

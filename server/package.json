@@ -1,0 +1,43 @@
+{
+  "name": "trello-clone-api",
+  "version": "0.1.0",
+  "author": "Kishore N G",
+  "main": "./dist/index.js",
+  "scripts": {
+    "start": "node ./dist/index.js",
+    "build": "babel ./src -d dist"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babel-preset-stage-2": "^6.22.0",
+    "babel-register": "^6.24.0"
+
+  },
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "body-parser": "^1.15.2",
+    "boom": "^5.1.0",
+    "cookie-parser": "^1.4.3",
+    "cors": "^2.8.1",
+    "csurf": "^1.9.0",
+    "express": "^4.14.0",
+    "express-validation": "^1.0.2",
+    "global": "^4.3.1",
+    "helmet": "^3.1.0",
+    "joi": "^10.3.3",
+    "lodash": "^4.17.4",
+    "mongodb": "^2.2.11",
+    "mongoose": "^4.7.0",
+    "nodemon": "^1.11.0",
+    "passport": "^0.3.2",
+    "passport-http": "^0.3.0",
+    "request": "^2.81.0",
+    "winston": "^2.3.0"
+  },
+  "engines": {
+    "node": "7.8.0"
+  },
+  "proxy": "http:://localhost"
+}
