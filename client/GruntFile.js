@@ -7,6 +7,7 @@ module.exports = function (grunt) {
 				sourceMap: true,
 				presets: ['es2015']
 			},
+			
 			dist: {
 				files: [{
 						expand: true,
